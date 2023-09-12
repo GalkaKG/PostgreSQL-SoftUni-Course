@@ -1,1 +1,2 @@
-# PostgresSQL-SoftUni-Course
+# PostgresSQL
+Course by SoftUni
