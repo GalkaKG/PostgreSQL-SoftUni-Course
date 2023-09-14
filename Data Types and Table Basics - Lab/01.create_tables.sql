@@ -1,6 +1,6 @@
 CREATE TABLE
 	employees(
-	    id serial PRIMARY key,
+	    id SERIAL PRIMARY KEY,
 		first_name VARCHAR(20),
 		last_name VARCHAR(30),
 		hiring_date DATE DEFAULT '2023-01-01',
@@ -10,7 +10,7 @@ CREATE TABLE
 	
 CREATE TABLE
 	departments(
-		id serial PRIMARY KEY NOT NULL,
+		id SERIAL PRIMARY KEY NOT NULL,
 		"name" VARCHAR(50),
 		code CHAR(30),
 		description TEXT
@@ -18,7 +18,7 @@ CREATE TABLE
 	
 CREATE TABLE
 	issues(
-		id serial PRIMARY KEY UNIQUE,
+		id SERIAL PRIMARY KEY UNIQUE,
 		description VARCHAR(150),
 		"date" DATE,
 		start TIMESTAMP
