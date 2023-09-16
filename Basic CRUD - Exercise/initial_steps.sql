@@ -1,0 +1,1 @@
+CREATE DATABASE softuni_management_db;
