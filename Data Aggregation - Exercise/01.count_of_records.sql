@@ -1,4 +1,4 @@
 SELECT
-	count(id) AS "Karaibrahim Bseniq"
+	count(id) AS "Count"
 FROM
 	wizard_deposits;
