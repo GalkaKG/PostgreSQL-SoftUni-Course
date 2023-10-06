@@ -79,10 +79,10 @@ CREATE TABLE animals_cages(
 		ON UPDATE CASCADE
 );
 
--- DROP TABLE IF EXISTS owners;
--- DROP TABLE IF EXISTS animal_types;
--- DROP TABLE IF EXISTS cages;
--- DROP TABLE IF EXISTS animals;
--- DROP TABLE IF EXISTS volunteers_departments;
--- DROP TABLE IF EXISTS volunteers;
 -- DROP TABLE IF EXISTS animals_cages;
+-- DROP TABLE IF EXISTS volunteers;
+-- DROP TABLE IF EXISTS volunteers_departments;
+-- DROP TABLE IF EXISTS animals;
+-- DROP TABLE IF EXISTS cages;
+-- DROP TABLE IF EXISTS animal_types;
+-- DROP TABLE IF EXISTS owners;
