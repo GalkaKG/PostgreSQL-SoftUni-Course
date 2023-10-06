@@ -19,7 +19,6 @@ CREATE TABLE cages(
 	FOREIGN KEY (animal_type_id)
 	REFERENCES animal_types(id)
 	ON DELETE CASCADE 
-	ON UPDATE CASCADE
 );
 
 CREATE TABLE animals(
@@ -31,13 +30,11 @@ CREATE TABLE animals(
 	CONSTRAINT fk_animals_owners
 	FOREIGN KEY (owner_id)
 	REFERENCES owners(id)
-		ON DELETE CASCADE 
-		ON UPDATE CASCADE,
+		ON DELETE CASCADE, 
 	CONSTRAINT fk_animals_animal_types
 	FOREIGN KEY (animal_type_id)
 	REFERENCES animal_types(id)
 		ON DELETE CASCADE 
-		ON UPDATE CASCADE
 );
 
 CREATE TABLE volunteers_departments(
@@ -55,13 +52,11 @@ CREATE TABLE volunteers(
 	CONSTRAINT fk_volunteers_animals
 	FOREIGN KEY (animal_id) 
 	REFERENCES animals(id)
-		ON DELETE CASCADE 
-		ON UPDATE CASCADE,
+		ON DELETE CASCADE,
 	CONSTRAINT fk_volunteers_volunteers_departments
 	FOREIGN KEY (department_id)
 	REFERENCES volunteers_departments(id)
 		ON DELETE CASCADE 
-		ON UPDATE CASCADE
 );
 
 CREATE TABLE animals_cages(
@@ -70,13 +65,11 @@ CREATE TABLE animals_cages(
 	CONSTRAINT fk_animals_cages_cages
 	FOREIGN KEY (cage_id)
 	REFERENCES cages(id)
-		ON DELETE CASCADE 
-		ON UPDATE CASCADE,
+		ON DELETE CASCADE,
 	CONSTRAINT fk_animals_cages_animals
 	FOREIGN KEY (animal_id)
 	REFERENCES animals(id)
 		ON DELETE CASCADE 
-		ON UPDATE CASCADE
 );
 
 -- DROP TABLE IF EXISTS animals_cages;
