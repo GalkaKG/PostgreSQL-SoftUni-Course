@@ -72,3 +72,11 @@ CREATE TABLE IF NOT EXISTS creators_board_games(
 	FOREIGN KEY (board_game_id) REFERENCES board_games(id)
 	ON DELETE CASCADE
 );
+
+-- DROP TABLE creators_board_games;
+-- DROP TABLE board_games;
+-- DROP TABLE creators;
+-- DROP TABLE players_ranges;
+-- DROP TABLE publishers;
+-- DROP TABLE addresses;
+-- DROP TABLE categories;
